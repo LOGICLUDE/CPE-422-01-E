@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#070202"
+    android:backgroundTint="#030A03"
+    android:divider="@color/colorAccent"
+    android:foregroundTint="#00000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#4CAF50"
+        android:gravity="center"
+        android:hint="Input" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="#3C3F41"
+            android:backgroundTint="#4CAF50"
+            android:onClick="encrypt"
+            android:text="Encrypt" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:backgroundTint="#4CAF50"
+            android:onClick="decrypt"
+            android:text="Decrypt" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etOutput"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:background="#4CAF50"
+        android:backgroundTint="#4CAF50"
+        android:gravity="center"
+        android:hint="Output" />
+
+</LinearLayout>
